@@ -4,26 +4,24 @@
 
 html {
   box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 body {
   max-width: 1080px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .container {
   display: grid;
-  gap: 5px;
-}
-
-.box {
-  border: 2px solid grey;
-  border-radius: 5px;
 }
 
 .A {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 83px;
 }
 
 .A1,
@@ -31,55 +29,80 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-right: 20px;
-  border: 2px solid goldenrod;
 }
 
 .A1 {
-  margin-left: 10px;
-  width: 100%;
+  margin-left: 40px;
   max-width: 170px;
 }
 
-.B {
-  display: grid;
+.A2 {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  color: #090909;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.B1 {
-  border: 2px solid goldenrod;
-  max-width: 100%;
-  justify-self: center;
+.nav-list {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
 }
+
+.B {
+  margin: 0 auto;
+  position: relative;
+}
+
+#overlay-text {
+  color: white;
+  position: absolute;
+  bottom: 80px;
+  left: 28px;
+}
+
+#overlay-text h1 {
+  font-size: 40px;
+}
+
+#overlay-text p {
+  font-size: 16px;
+  max-width: 615px;
+}
+
 
 .C {
   display: grid;
-  gap: 5px;
+  gap: 20px;
+  max-width: 95%;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 40px auto;
 }
 
 .C1,
 .C2,
-.C3 {
+.C3,
+.C4,
+.C5,
+.C6 {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .blog-img {
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.blog-img,
-h3,
-p {
-  border: 2px solid goldenrod;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  border-radius: 5px;
+.date {
+    margin-bottom: 10px;
 }
 
-.card {
-  border: 2px solid goldenrod;
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .D {
@@ -88,18 +111,37 @@ p {
 }
 
 .D1 {
-  border: 2px solid goldenrod;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 2.5em;
+}
+
+.D1 a {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 .E {
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #202020;
+  color: white;
+  height: 105px;
+  justify-content: center;
 }
 
-.E1 {
-  border: 2px solid goldenrod;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
+.foot-up {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ececec;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.foot-down {
+  font-size: 12px;
+  color: #d7d7d7;
+  margin-bottom: 0;
+  margin-left: 0;
 }
