@@ -20,5 +20,5 @@ jobs:
           username: admin_pablo
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          source: "./**"  # deploy all files in the repo root and subfolders
+          source: "./*"  # deploy all files in the repo root and subfolders
           target: "/var/www/learning-journal"
