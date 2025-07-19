@@ -3,7 +3,7 @@ name: Deploy learning-journal
 on:
   push:
     branches:
-      - main  # or your default branch
+      - main # Or your default branch, e.g., 'master'
 
 jobs:
   deploy:
@@ -11,14 +11,15 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Using the latest recommended version
 
       - name: Deploy files via SCP
-        uses: appleboy/scp-action@v0.1.7
+        uses: appleboy/scp-action@v0.1.7 # Specific version you were using
+
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: admin_pablo
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          source: "./*"  # deploy all files in the repo root and subfolders
-          target: "/var/www/learning-journal"
+          source: "./*" # Deploy all files and folders from the repository root
+          target: "/var/www/learning-journal" # Your specific target directory on the server
