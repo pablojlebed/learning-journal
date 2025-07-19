@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+body {
+  background-color: #e6e6e6;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 640px;
+  background-color: white;
+  border: 1px solid red;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid red;
+}
+
+h1,
+p {
+  border: 1px solid red;
+}

@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 html {
@@ -8,20 +9,22 @@ html {
 }
 
 body {
-  max-width: 1080px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #e6e6e6;
 }
 
 .container {
-  display: grid;
+  background-color: white;
+  max-width: 1085px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .A {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 83px;
+  height: 5rem;
 }
 
 .A1,
@@ -41,7 +44,7 @@ body {
   align-items: center;
   margin-right: 40px;
   color: #090909;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -52,26 +55,37 @@ body {
 }
 
 .B {
-  margin: 0 auto;
   position: relative;
+
+}
+
+.B1 {
+  width: 100%;
+  height: auto;
+  display: block;
+
 }
 
 #overlay-text {
   color: white;
   position: absolute;
-  bottom: 80px;
-  left: 28px;
+  bottom: 10%;
+  left: 3%;
+
+}
+
+.hero-date {
+  font-size: 1rem;
 }
 
 #overlay-text h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
-#overlay-text p {
-  font-size: 16px;
-  max-width: 615px;
+.hero-text {
+  font-size: 1rem;
+  max-width: 60%;
 }
-
 
 .C {
   display: grid;
@@ -92,15 +106,17 @@ body {
 }
 
 .blog-img {
+  width: 100%;
   margin-bottom: 20px;
+  border-radius: 3px;
 }
 
 .date {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -118,7 +134,7 @@ h3 {
   color: black;
   text-decoration: underline;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .E {
@@ -132,7 +148,7 @@ h3 {
 }
 
 .foot-up {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
   color: #ececec;
   margin-bottom: 0;
@@ -140,7 +156,7 @@ h3 {
 }
 
 .foot-down {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #d7d7d7;
   margin-bottom: 0;
   margin-left: 0;
