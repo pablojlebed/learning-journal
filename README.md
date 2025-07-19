@@ -1,19 +1,62 @@
-# Getting Started
-Install the dependencies and run the project
+# Learning Journal
+
+A clean, responsive personal blog-style project built using **vanilla HTML, CSS, and JavaScript**, and deployed using **Astro**. This project is part of the **Scrimba Frontend Developer Career Path** and demonstrates fundamental web development practices including semantic HTML, layout design, and modular structure.
+
+**🔗 Live Demo**: [learning-journal.pablolebed.dev](https://learning-journal.pablolebed.dev)
+
+## 📸 Preview
+
+![Learning Journal Screenshot](./preview.png) <!-- Optional: Replace with actual screenshot if available -->
+
+## 🧰 Tech Stack
+
+* **HTML5**
+* **CSS3**
+* **Vanilla JavaScript (ES6)**
+* **Astro** (for deployment and structure)
+* **Deployed with Caddy on Ubuntu server**
+
+## 📁 Project Structure
+
 ```
+learning-journal/
+├── public/              # Static assets (favicon, images, etc.)
+├── src/
+│   ├── components/      # Reusable HTML partials or Astro components (if used)
+│   ├── pages/           # Page content (e.g., index.astro, about.astro)
+│   ├── styles/          # Global and modular CSS
+│   └── scripts/         # JavaScript files
+├── astro.config.mjs     # Astro configuration
+├── package.json
+├── README.md
+└── vite.config.js
+```
+
+## 🚀 Setup & Development
+
+To run the project locally:
+
+```bash
+git clone https://github.com/your-username/learning-journal.git
+cd learning-journal
 npm install
-npm start
+npm run dev
 ```
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+Then open [http://localhost:4321](http://localhost:4321) in your browser.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+## 📦 Build for Production
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+```bash
+npm run build
+```
 
-Happy Coding!
+## 🧑‍💻 Author
+
+**Pablo Lebed**
+Frontend Developer in transition from Analytical Chemistry.
+[Portfolio](https://www.pablolebed.dev)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](./LICENSE).
