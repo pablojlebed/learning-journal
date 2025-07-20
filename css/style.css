@@ -13,6 +13,8 @@ body {
   background-color: #e6e6e6;
 }
 
+/*---------------------------------------------------*/
+
 .container {
   background-color: white;
   max-width: 1085px;
@@ -29,20 +31,19 @@ body {
 
 .A1,
 .A2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 20px;
+  margin-top: 0.625em;
+  margin-bottom: 0.625em;
 }
 
 .A1 {
-  margin-left: 40px;
+  margin-left: 2.5em;
   max-width: 170px;
 }
 
 .A2 {
   display: flex;
   align-items: center;
-  margin-right: 40px;
+  margin-right: 2em;
   color: #090909;
   font-size: 1rem;
   font-weight: 600;
@@ -50,20 +51,21 @@ body {
 
 .nav-list {
   display: flex;
-  gap: 20px;
   list-style-type: none;
+}
+
+.nav-list li {
+  margin-left: 1.25em;
 }
 
 .B {
   position: relative;
-
 }
 
 .B1 {
   width: 100%;
   height: auto;
   display: block;
-
 }
 
 #overlay-text {
@@ -71,7 +73,6 @@ body {
   position: absolute;
   bottom: 10%;
   left: 3%;
-
 }
 
 .hero-date {
@@ -92,7 +93,10 @@ body {
   gap: 20px;
   max-width: 95%;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 40px auto;
+  margin-top: 2.5em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 .C1,
@@ -103,31 +107,29 @@ body {
 .C6 {
   display: flex;
   flex-direction: column;
+  border: 1px solid red;
 }
 
 .blog-img {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   border-radius: 3px;
 }
 
 .date {
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 0.25em;
 }
 
 .D {
-  display: flex;
-  justify-content: center;
-}
-
-.D1 {
-  margin-bottom: 2.5em;
+  display: block;
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 .D1 a {
@@ -138,26 +140,175 @@ h3 {
 }
 
 .E {
-  display: flex;
-  flex-direction: column;
+  display: block;
   text-align: center;
   background-color: #202020;
   color: white;
-  height: 105px;
-  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .foot-up {
   font-size: 0.75rem;
   font-weight: bold;
   color: #ececec;
-  margin-bottom: 0;
-  margin-left: 0;
 }
 
 .foot-down {
   font-size: 0.75rem;
   color: #d7d7d7;
-  margin-bottom: 0;
-  margin-left: 0;
+}
+
+/* -------Media queries------- */
+
+@media (max-width: 480px) {
+  .container {
+    background-color: yellow;
+    max-width: 414px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .A {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 59px;
+  }
+
+  .A1,
+  .A2 {
+    margin-top: 0.625em;
+    margin-bottom: 0.625em;
+    margin-right: 1.25em;
+  }
+
+  .A1 {
+    margin-left: 2.5em;
+    max-width: 114px;
+  }
+
+  .A2 {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+    color: #090909;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+  }
+
+  .nav-list li {
+    margin-left: 1.25em;
+  }
+
+  .B {
+    position: relative;
+  }
+
+  .B1 {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #overlay-text {
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+  }
+
+  .hero-date {
+    font-size: 0.75rem;
+  }
+
+  #overlay-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    max-width: 60%;
+  }
+
+  .C {
+    display: grid;
+    gap: 20px;
+    max-width: 95%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .C1,
+  .C2,
+  .C3,
+  .C4,
+  .C5,
+  .C6 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+
+  .blog-img {
+    width: 100%;
+    margin-bottom: 1.25em;
+    border-radius: 3px;
+  }
+
+  .date {
+    margin-bottom: 0.625em;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+  }
+
+  .D {
+    display: block;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .D1 a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+
+  .E {
+    display: block;
+    text-align: center;
+    background-color: #202020;
+    color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .foot-up {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #ececec;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .foot-down {
+    font-size: 0.75rem;
+    color: #d7d7d7;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 }
