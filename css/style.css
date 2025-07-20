@@ -65,10 +65,16 @@ body {
   background-repeat: no-repeat;
   aspect-ratio: 2.223;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 2rem;
+  display: block;
+  justify-items: flex-start;
+  align-content: flex-end;
+  
+}
+
+.hero-date,
+.hero-title,
+.hero-text {
+  margin-left: 2rem;
 }
 
 .hero-date {
@@ -83,7 +89,8 @@ body {
 
 .hero-text {
   font-size: clamp(0.9rem, 2vw, 1rem);
-  width: 60%;
+  max-width: 60%;
+  margin-bottom: 2em;
 }
 
 .C {
@@ -204,24 +211,31 @@ h3 {
     margin-left: 1.25em;
   }
 
-  .B {
-    max-height: 293px;
-    max-width: 414px;
-  }
+.B {
+  max-height: 293px;
+  margin-bottom: 0;
+}
 
-  .hero-date {
-    font-size: 0.75rem;
-  }
+.hero-date {
+  margin-top:5em;
+  font-size: 0.75rem;
+  margin-bottom: 1em;
 
-  .hero-title {
-    width: 100%;
-    font-size: 2rem;
-  }
+}
 
-  .hero-text {
-    width: 100%;
-    font-size: 1rem;
-  }
+.hero-title {
+  font-size: 2rem;
+  line-height: 1;
+
+  margin-bottom: 0.5em;
+}
+
+.hero-text {
+  font-size: 1rem;
+  max-width: 100%;
+
+  margin-bottom: 1em;
+}
 
   .C1,
   .C2,
