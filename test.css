@@ -204,32 +204,6 @@ h3 {
     margin-left: 1.25em;
   }
 
-.B {
-  background-image: url(/images/blog-image-hero.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.hero-date {
-  font-size: 1rem;
-  margin-bottom: 0.5em;
-}
-
-.hero-title {
-  font-size: 16px;
-  margin-bottom: 0.5em;
-}
-
-.hero-text {
-  max-width: unset;
-
-}
-
   .C1,
   .C2,
   .C3,

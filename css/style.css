@@ -59,40 +59,38 @@ body {
 }
 
 .B {
-  position: relative;
-}
-
-.B1 {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-#overlay-text {
+  background-image: url(/images/blog-image-hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 2.223;
   color: white;
-  position: absolute;
-  bottom: 10%;
-  left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
 }
 
 .hero-date {
   font-size: 1rem;
+  margin-bottom: 0.5em;
 }
 
-#overlay-text h1 {
-  font-size: 2.5rem;
+.hero-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 0.5em;
 }
 
 .hero-text {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   max-width: 60%;
 }
 
 .C {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  max-width: 95%;
-  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 2.5em;
   margin-bottom: 1em;
   margin-left: 2em;
@@ -107,7 +105,7 @@ body {
 .C6 {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  flex: 1 300px;
 }
 
 .blog-img {
@@ -163,8 +161,7 @@ h3 {
 
 @media (max-width: 480px) {
   .container {
-    background-color: yellow;
-    max-width: 414px;
+    background-color: white;
     width: 100%;
     margin: 0 auto;
   }
@@ -207,47 +204,6 @@ h3 {
     margin-left: 1.25em;
   }
 
-  .B {
-    position: relative;
-  }
-
-  .B1 {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  #overlay-text {
-    color: white;
-    position: absolute;
-    bottom: 10%;
-    left: 3%;
-  }
-
-  .hero-date {
-    font-size: 0.75rem;
-  }
-
-  #overlay-text h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text {
-    font-size: 1rem;
-    max-width: 60%;
-  }
-
-  .C {
-    display: grid;
-    gap: 20px;
-    max-width: 95%;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 2.5em;
-    margin-bottom: 1em;
-    margin-left: 2em;
-    margin-right: 2em;
-  }
-
   .C1,
   .C2,
   .C3,
@@ -257,6 +213,12 @@ h3 {
     display: flex;
     flex-direction: column;
     border: 1px solid red;
+  }
+
+  .C4,
+  .C5,
+  .C6 {
+    display: none;
   }
 
   .blog-img {
