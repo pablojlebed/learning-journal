@@ -60,3 +60,6 @@ Frontend Developer in transition from Analytical Chemistry.
 ## 📄 License
 
 This project is open source and available under the [MIT License](./LICENSE).
+
+---------------------------------------------
+If you find this useful, feel free to star it or open an issue — even a hello goes a long way 😊
